@@ -66,3 +66,23 @@ If everything went well you should see [this](http://jsfiddle.net/f17Lz5ux/).
 ### Change log ###
 
 [releases](https://github.com/mrdoob/three.js/releases)
+
+## Getting Started
+
+### Prerequisites
+- Node.js 18+
+
+### Install
+```bash
+npm install
+```
+
+### Development
+```bash
+npm run dev
+```
+
+### Test
+```bash
+npm test
+```
