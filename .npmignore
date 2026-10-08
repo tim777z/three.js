@@ -1,6 +1,41 @@
+# Source and development files
 examples/
 src/
 test/
 utils/
 docs/
 editor/
+
+# Configuration files
+.eslintrc.json
+.prettierrc.json
+karma.conf.js
+.nvmrc
+.env.example
+audit-ci.json
+CHANGELOG.md
+CONTRIBUTING.md
+
+# Git and CI
+.git/
+.github/
+.gitignore
+
+# Build tools
+*.py
+*.sh
+
+# IDE/Editor
+.vscode/
+.idea/
+*.sublime-*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and cache
+*.log
+npm-debug.log*
+.eslintcache
+.prettiercache

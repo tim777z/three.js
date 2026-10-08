@@ -343,3 +343,6 @@ THREE.CanvasRenderer = function () {
 	this.setSize = function () {};
 
 };
+
+// Error handling and validation (loaded from src/core/Error.js and src/core/Validator.js)
+// These are included in the build via build.py or build.js
