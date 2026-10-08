@@ -1,0 +1,87 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "script"
+  },
+  "globals": {
+    "THREE": "readonly"
+  },
+  "rules": {
+    "indent": ["warn", "tab"],
+    "linebreak-style": ["warn", "windows"],
+    "quotes": ["warn", "double"],
+    "semi": ["warn", "always"],
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
+    "no-undef": "error",
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "no-empty": ["warn", { "allowEmptyCatch": true }],
+    "eqeqeq": ["warn", "always"],
+    "curly": ["warn", "all"],
+    "no-eval": "error",
+    "no-implied-eval": "error",
+    "no-new-func": "error",
+    "no-script-url": "error",
+    "no-self-compare": "warn",
+    "no-throw-literal": "error",
+    "no-unused-expressions": "warn",
+    "prefer-const": "off",
+    "no-var": "off",
+    "object-shorthand": "off",
+    "prefer-arrow-callback": "off",
+    "prefer-template": "off",
+    "no-prototype-builtins": "off"
+  },
+  "overrides": [
+    {
+      "files": ["src/core/Error.js", "src/core/Validator.js"],
+      "rules": {
+        "indent": ["warn", 2],
+        "linebreak-style": ["warn", "unix"],
+        "quotes": ["warn", "single"],
+        "no-var": "error",
+        "prefer-const": "error",
+        "prefer-arrow-callback": "warn",
+        "prefer-template": "warn",
+        "curly": ["warn", "all"],
+        "no-prototype-builtins": "error"
+      }
+    },
+    {
+      "files": ["test/**/*.js"],
+      "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true,
+        "qunit": true
+      },
+      "globals": {
+        "QUnit": "readonly",
+        "assert": "readonly",
+        "THREE": "readonly"
+      },
+      "rules": {
+        "no-undef": "off"
+      }
+    },
+    {
+      "files": ["examples/**/*.js"],
+      "env": {
+        "browser": true,
+        "es2021": true
+      },
+      "globals": {
+        "THREE": "readonly",
+        "dat": "readonly",
+        "Stats": "readonly"
+      }
+    }
+  ]
+}
